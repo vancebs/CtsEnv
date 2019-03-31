@@ -10,6 +10,7 @@ RUN apt-get install -y sudo
 # copy aapt
 COPY misc/aapt /usr/local/bin/aapt
 COPY misc/aapt2 /usr/local/bin/aapt2
+COPY misc/libc++.so /usr/local/lib64/libc++.so
 RUN chmod a+x /usr/local/bin/aapt
 RUN chmod a+x /usr/local/bin/aapt2
 
